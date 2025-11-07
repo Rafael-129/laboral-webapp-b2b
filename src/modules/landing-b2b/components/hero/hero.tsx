@@ -1,8 +1,8 @@
 export default function Hero() {
     return (
-      <section className="w-full">
+      <section className="w-full py-8">
         <div className="container mx-auto px-4">
-          <div className="bg-gray-100 rounded-2xl md:rounded-3xl overflow-hidden">
+          <div className="rounded-2xl md:rounded-3xl overflow-hidden">
             <div className="grid md:grid-cols-2 items-center gap-6 md:gap-10">
               <div className="px-6 md:px-10 py-10 md:py-14">
                 <div className="space-y-4 md:space-y-6 text-gray-900">

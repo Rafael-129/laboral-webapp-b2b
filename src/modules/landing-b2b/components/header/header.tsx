@@ -1,18 +1,10 @@
 "use client";
 
 import React from "react";
-// import Logo from "@/modules/shared/components/icons/Logo"; // Comentado temporalmente
-import { Button } from "@nextui-org/button";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarMenuToggle,
-} from "@nextui-org/navbar";
+import Logo from "@/src/modules/shared/components/icons/Logo";
+import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -25,8 +17,13 @@ export default function Header() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          {/* <Logo fill="#3461FF" /> */}
-          <span className="text-2xl font-bold text-blue-600">TuLogo</span>
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            <Logo fill="#3461FF" />
+          </motion.div>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent justify="end">
@@ -43,15 +40,17 @@ export default function Header() {
         </NavbarItem>
 
         <NavbarItem className="hidden md:block">
-          <Button
-            as={Link}
-            color="primary"
-            href="/app/login"
-            radius="full"
-            variant="flat"
-          >
-            Ingresar
-          </Button>
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+            <Button
+              as={Link}
+              color="primary"
+              href="/app/login"
+              radius="full"
+              variant="flat"
+            >
+              Ingresar
+            </Button>
+          </motion.div>
         </NavbarItem>
       </NavbarContent>
 
