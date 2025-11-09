@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <Navbar maxWidth="2xl" onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
