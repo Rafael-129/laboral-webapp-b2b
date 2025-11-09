@@ -10,8 +10,22 @@ type Props = {
     className?: string;
 };
 
-const brandsLTR = [{ src: "https://logo.clearbit.com/stripe.com", alt: "Stripe" }, { src: "https://logo.clearbit.com/airbnb.com", alt: "Airbnb" }, { src: "https://logo.clearbit.com/uber.com", alt: "Uber" }, { src: "https://logo.clearbit.com/hubspot.com", alt: "HubSpot" }, { src: "https://logo.clearbit.com/vercel.com", alt: "Vercel" },];
-const brandsRTL = [{ src: "https://logo.clearbit.com/slack.com", alt: "Slack" }, { src: "https://logo.clearbit.com/atlassian.com", alt: "Atlassian" }, { src: "https://logo.clearbit.com/netflix.com", alt: "Netflix" }, { src: "https://logo.clearbit.com/microsoft.com", alt: "Microsoft" }, { src: "https://logo.clearbit.com/spotify.com", alt: "Spotify" }, { src: "https://logo.clearbit.com/shopify.com", alt: "Shopify" },]
+// Usamos assets locales desde src/public/brands (rutas públicas empiezan con /brands/...)
+const brandsLTR = [
+  { src: "/brands/stripe.webp", alt: "Stripe" },
+  { src: "/brands/airbnb.png", alt: "Airbnb" },
+  { src: "/brands/uber.png", alt: "Uber" },
+  { src: "/brands/hubspot.png", alt: "HubSpot" },
+  { src: "/brands/vercel.png", alt: "Vercel" },
+  { src: "/brands/shopify.png", alt: "Shopify" },
+];
+const brandsRTL = [
+  { src: "/brands/slack.png", alt: "Slack" },
+  { src: "/brands/atlaissan.png", alt: "Atlassian" },
+  { src: "/brands/Netflix_icon.png", alt: "Netflix" },
+  { src: "/brands/microsoft.png", alt: "Microsoft" },
+  { src: "/brands/Spotify_logo_without_text.png", alt: "Spotify" },
+];
 
 export default function Carrousel({ direction, className = "" }: Props) {
     const base = direction === "rtl" ? brandsRTL : brandsLTR;
