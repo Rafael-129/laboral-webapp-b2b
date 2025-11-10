@@ -1,14 +1,11 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
 import NumberCounter from "./NumberCounter";
-import LineProductivityChart from "./LineProductivityChart";
 import SatisfactionDonutChart from "./SatisfactionDonutChart";
 
 const AnalyticsSection = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Columna Izquierda - Texto */}
         <div>
@@ -42,12 +39,8 @@ const AnalyticsSection = () => {
         </div>
 
         {/* Columna Derecha - Dos tarjetas animadas */}
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-1/2">
-            <LineProductivityChart />
-          </div>
-
-          <div className="w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
+          <div className="flex w-full md:w-1/2 items-center justify-center">
             <SatisfactionDonutChart />
           </div>
         </div>

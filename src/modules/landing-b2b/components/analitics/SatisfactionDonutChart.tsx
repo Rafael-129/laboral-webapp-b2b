@@ -10,7 +10,7 @@ export default function SatisfactionDonutChart() {
         {(() => {
           const R = 70;
           const C = 2 * Math.PI * R;
-          const percentage = 0.9; // 90% satisfacción
+          const percentage = 0.9;
           const dashLen = C * percentage;
           const rest = C - dashLen;
 

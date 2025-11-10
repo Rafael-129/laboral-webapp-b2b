@@ -8,11 +8,8 @@ import Footer from "./components/footer/footer";
 import CTA from "./components/cta/cta";
 import Carrousel from "./components/carrousel/carrousel";
 
-type Props = {
- 
-}
 
-export default function Landing({}: Props) {
+export default function Landing() {
     return ( 
         <>
             <Header />
@@ -20,8 +17,6 @@ export default function Landing({}: Props) {
             <Hero />
 
             <Feature />
-
-            <Analitics />
 
             <div className="py-16">
                 <h2 className="text-3xl font-bold text-center mb-4 text-slate-800">
@@ -36,6 +31,12 @@ export default function Landing({}: Props) {
                 
                 <Carrousel direction="ltr" />
             </div>
+
+            <div className="py-8">
+                <h2 className="text-center text-gray-700 mb-4 text-2xl">“Laboral.ai: La IA que desbloquea el liderazgo”</h2>
+            </div>
+
+            <Analitics />
 
             <Video />
 
