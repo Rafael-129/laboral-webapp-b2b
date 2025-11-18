@@ -12,19 +12,24 @@ type Props = {
 
 // Usamos assets locales desde src/public/brands (rutas públicas empiezan con /brands/...)
 const brandsLTR = [
-  { src: "/brands/stripe.webp", alt: "Stripe" },
-  { src: "/brands/airbnb.png", alt: "Airbnb" },
-  { src: "/brands/uber.png", alt: "Uber" },
-  { src: "/brands/hubspot.png", alt: "HubSpot" },
-  { src: "/brands/vercel.png", alt: "Vercel" },
-  { src: "/brands/shopify.png", alt: "Shopify" },
+  { src: "/brands/adn-patterns.png", alt: "ADN Patterns" },
+  { src: "/brands/ainhoabio-logo.png", alt: "AinhoaBio" },
+  { src: "/brands/cofide-logo.png", alt: "COFIDE" },
+  { src: "/brands/firmeasy.png", alt: "FirmEasy" },
+  { src: "/brands/green-id-logo.png", alt: "Green ID" },
+  { src: "/brands/incubaunt-logo.png", alt: "IncubaUNT" },
+  { src: "/brands/kendo-logo.png", alt: "Kendo" },
+  { src: "/brands/koica-peru-logo.png", alt: "KOICA Perú" },
 ];
 const brandsRTL = [
-  { src: "/brands/slack.png", alt: "Slack" },
-  { src: "/brands/atlaissan.png", alt: "Atlassian" },
-  { src: "/brands/Netflix_icon.png", alt: "Netflix" },
-  { src: "/brands/microsoft.png", alt: "Microsoft" },
-  { src: "/brands/Spotify_logo_without_text.png", alt: "Spotify" },
+  { src: "/brands/logo-kunan.png", alt: "Kunan" },
+  { src: "/brands/logo-proinnovate.png", alt: "ProInnóvate" },
+  { src: "/brands/luchala-logo.png", alt: "Luchala" },
+  { src: "/brands/shift-logo.jpg", alt: "Shift" },
+  { src: "/brands/startup-peru-logo.png", alt: "Startup Perú" },
+  { src: "/brands/universidad-cientifica-logo.png", alt: "Universidad Científica" },
+  { src: "/brands/utec-ventures.png", alt: "UTEC Ventures" },
+  { src: "/brands/vistony-logo.png", alt: "Vistony" },
 ];
 
 export default function Carrousel({ direction, className = "" }: Props) {
