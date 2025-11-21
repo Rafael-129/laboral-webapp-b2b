@@ -19,17 +19,12 @@ export default function Hero() {
                   a invertir en <span className="font-extrabold">potencial futuro</span>
                 </p>
 
-                <p className="text-sm sm:text-base text-gray-600 max-w-xl">
-                  Solicite su Demo Personalizada y descubra cómo nuestra IA identifica a los Líderes
-                  Empleables con el mejor fit cultural y de crecimiento para su organización.
-                </p>
-
                 <div>
                   <a
                     href="#demo"
                     className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-white text-sm sm:text-base font-medium shadow-sm bg-indigo-500 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 transition-all duration-300 ease-in-out transform"
                   >
-                    Es el momento
+                    Solicite su demo
                   </a>
                 </div>
               </div>

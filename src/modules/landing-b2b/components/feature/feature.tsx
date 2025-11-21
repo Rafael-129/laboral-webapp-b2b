@@ -5,7 +5,7 @@ export default function Feature() {
                 <div>
                     <p className="text-indigo-600 text-sm font-semibold tracking-wide uppercase">Características</p>
                     <h2 className="text-4xl font-bold text-gray-900 mb-8 mt-4">
-                        Beneficios de Nuestra IA de Selección
+                        Beneficios de nuestra IA de selección
                     </h2>
 
                     <div className="space-y-8 py-4">

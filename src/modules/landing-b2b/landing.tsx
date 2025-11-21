@@ -24,7 +24,7 @@ export default function Landing() {
                 </h2>
                 
                 <p className="text-center text-slate-600 mb-4">
-                    Conoce a las empresas que confían en Laboral AI para impulsar sus contrataciones.
+                    Conoce a las empresas que confían en Laboral AI.
                 </p>
                 
                 <Carrousel direction="rtl" />
@@ -33,7 +33,7 @@ export default function Landing() {
             </div>
 
             <div className="py-8">
-                <h2 className="text-center text-gray-700 mb-4 text-2xl">“Laboral.ai: La IA que desbloquea el liderazgo”</h2>
+                <h2 className="text-center text-gray-700 mb-4 text-2xl">“Laboral.AI: La IA que desbloquea el liderazgo”</h2>
             </div>
 
             <Analitics />
