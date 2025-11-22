@@ -120,17 +120,18 @@ export default function Feature() {
                     </motion.div>
 
                     {/* Imagen con animación */}
+                    {/* MOBILE: animación fade-in-up */}
                     <motion.div
-                        className="relative h-full"
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        className="relative h-full md:hidden"   // solo visible en mobile
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                     >
                         <div className="sticky top-24 flex items-center h-full">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full">
                                 <img
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1470&q=80"
                                     alt="Dashboard de análisis de candidatos"
                                     className="w-full h-auto object-cover"
                                     loading="lazy"
@@ -139,6 +140,25 @@ export default function Feature() {
                         </div>
                     </motion.div>
 
+                    {/* DESKTOP: animación fade-in from right */}
+                    <motion.div
+                        className="relative h-full hidden md:block"   // solo visible en desktop/tablet
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                    >
+                        <div className="sticky top-24 flex items-center h-full">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full">
+                                <img
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1470&q=80"
+                                    alt="Dashboard de análisis de candidatos"
+                                    className="w-full h-auto object-cover"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
